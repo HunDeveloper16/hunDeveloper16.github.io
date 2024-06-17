@@ -3,3 +3,48 @@
 ---
 
 @import 'modern-resume-theme';
+// add Jua font
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italic|Noto+Sans+KR:wght@300);
+
+// setting Jua font
+body {
+    color: #333;
+    font-family: Noto+Sans+KR, Roboto, sans-serif;
+    font-feature-settings: "kern", "liga", "pnum";
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+// 홈페이지 링크 밑줄 추가
+body > main > div > div:nth-child(3) > div > div.col-xs-12.col-sm-4.col-md-3.col-print-12.details > a {
+    text-decoration: underline; /* 밑줄 추가 */
+}
+
+// 표 요소 위아래 띄우기
+li {
+  margin: 10px 0; /* 위아래 10px, 좌우 0px */
+}
+
+p,
+ul {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+// fix skill font-size
+h4 {
+    font-size: 2.3rem;
+    margin-bottom: 3px
+}
+mark {
+  font-size: 1.5rem !important;
+  font-weight: 500;
+  margin-right: 5px; /* 오른쪽 간격 5px */
+}
+
+body > main > div > div:nth-child(3) > div:nth-child(2) > div.col-xs-12.col-sm-4.col-md-3.col-print-12.details,
+body > main > div > div:nth-child(3) > div:nth-child(3) > div.col-xs-12.col-sm-4.col-md-3.col-print-12.details {
+  /* 스타일 */
+    display: initial;
+}
